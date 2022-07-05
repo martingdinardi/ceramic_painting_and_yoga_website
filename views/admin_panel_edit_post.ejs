@@ -1,0 +1,50 @@
+<!--  -->
+
+<% if(post !=null) {%>
+  <form action="/admin/edit_post/<%= post._id %>" method="POST" enctype="multipart/form-data">
+    <div class="post-holder">
+      <div class="post-elements">
+        <div class="post">
+          <div class="post-img-title-description">
+            <!-- <div class="post-img-holder">
+              <img src="<%= post.image %>" />
+            </div> -->
+            <div class="image post-img-holder">
+              <button type="button">
+                <img src="<%= post.image%>" class="preview-image" />
+                <input type="file" for="image" name="image" class="file-input" accept=".png, .jpg, .jpeg" />
+              </button>
+            </div>
+            <!--  <div class="post-title-holder">
+              <h1>
+                <%= post.title %>
+              </h1>
+            </div> -->
+            <div class="post-title-holder">
+              <!-- <textarea name="title" id=""> <%= post.title%></textarea> -->
+              <input type="text" name="title" value="<%= post.title%>"></input>
+            </div>
+            <div class="post-description-holder">
+              <!-- <div class="post-description">
+                <p>
+                  <%= post.description %>
+                </p>
+              </div> -->
+              <div class="post-description">
+                <textarea name="description" id=""><%= post.description%></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="confirm-button">Confirmar</button>
+            <a href="/panel/home/">
+              <button type="button" class="cancel-button">Cancelar</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <% }%>
+
+    <script src="/js/edpost.js"></script>

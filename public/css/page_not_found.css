@@ -1,0 +1,29 @@
+body{
+  height: 100vh
+}
+
+header{
+  height: 15vh;
+}
+
+.not_found_text{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+}
+
+.not_found_text p{
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+footer{
+  height: 35vh;
+}
+
+h1{
+  color: #39b54a
+}

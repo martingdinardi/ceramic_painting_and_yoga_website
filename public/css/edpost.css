@@ -1,0 +1,229 @@
+.item-selected {
+  background-color: transparent;
+}
+
+.item-selected a img {
+  filter: none;
+}
+
+.dashboard-holder{
+  justify-content: center;
+  height: 80%;
+  display: block;
+}
+.edit_post_holder{
+  /* display: flex; */
+    width: 80%;
+    /* height: 25rem; */
+    /* box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
+}
+
+.left{
+  /* background-color: seagreen; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  display: flex;
+    width: 100%;
+    /* background: cadetblue; */
+    justify-content: center;
+}
+
+.preview-image{
+  width: 100%;
+}
+
+.image{width: 100%;}
+
+.image input{
+  opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scale(80);
+    cursor: pointer;
+}
+
+.image button[type="button"] {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  background: none;
+  /**/
+  width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title form{
+  width: 100%;
+}
+
+.left textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none;
+    font-family: system-ui;
+    font-size: 1rem;
+    font-weight: 400;
+    height: 4.5rem;
+    overflow: hidden;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: thistle; */
+  width: 100%;
+}
+
+.buttons button{
+  width: 70%;
+  background: lightblue;
+  margin-top: 0.5rem;
+  border: none;
+  height: 2rem;
+  padding: 0 1rem;
+  font-family: system-ui;
+  color: white;
+  cursor: pointer;
+}
+
+.buttons a{
+  width: 70%;
+}
+
+.buttons .cancel-button{
+  background-color: #fa8d7e;
+  width: 100%;
+}
+
+.right{
+  /* background-color: cadetblue; */
+  width: 60%;
+}
+
+.right .edit_post_description{
+  /* background-color: coral; */
+  height: 100%;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.right textarea{
+  width: 80%;
+  height:100%;
+    border: none;
+    font-family: system-ui;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+/* .dashboard-holder{
+  justify-content: center;
+  height: 80%;
+} */
+
+/* TESTING POSTS !! */
+
+.post-holder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  min-height: 25rem;
+}
+
+.post-holder img{
+width: 100%;
+}
+
+.post-holder h1{
+font: 500 1.6rem/125% 'Jost', sans-serif;
+  color: #393939;
+}
+
+.post-elements{
+/* background: brown; */
+width: 70%;
+display: flex;
+justify-content: space-between;
+}
+
+.post{
+background: #fff;
+margin: 1rem 0;
+box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.post-title-holder{
+padding: 1rem;
+}
+
+.post-title-holder input{
+  font: 500 1.6rem/125% 'Jost', sans-serif;
+    color: #393939;
+    border: none;
+    width: 100%;
+}
+
+.post-img-holder{
+text-align: center;
+height: 15rem;
+overflow: hidden;
+}
+
+.post-description-holder{
+padding: 0rem 1rem 1rem 1rem;
+color: #393939;
+}
+
+.post-description{
+height: 15rem;
+}
+
+.post-description-holder p, .post-description-holder textarea{
+font-size: 0.90rem;
+white-space: pre-line;
+word-break: break-all;
+text-align: justify;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+border: none;
+height: 100%;
+width: 100%;
+}
+/**/
+
+@media only screen and (max-width: 410px) {
+  /* For mobile: */
+}
+
+@media only screen and (max-width: 814px) {
+  /* For small tablet: */
+  .dashboard-holder{justify-content: center;height: initial;}
+  .greeting{display: none;}
+  .post-img-holder {height: auto;}
+  .post-title-holder input{font-size: 1em}
+}
+
+@media only screen and (max-width: 815px) {
+  /* For tablet: */
+ 
+}
+
+@media only screen and (max-width: 900px) {
+
+
+}

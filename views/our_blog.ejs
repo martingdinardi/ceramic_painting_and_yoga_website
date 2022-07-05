@@ -1,0 +1,82 @@
+<div class="our-blog-container">
+  <div class="our-blog">
+    <div class="our-blog-title" style="
+    margin-top: 1rem;">
+      <p>NUESTRO <span class="highlighted-green">BLOG</span></p>
+    </div>
+    <div class="our-blog-articles all-our-posts">
+
+
+      <% if(posts !="" ) { %>
+        <% posts.latestPosts.forEach(function(post, index){ %>
+
+          <div class="article">
+            <div class="article-img">
+              <img src="<%= post.image%>" alt="" />
+            </div>
+            <div class="article-text">
+              <div class="article-title">
+                <p>
+                  <%= post.title%>
+                </p>
+              </div>
+              <div class="article-description">
+                <p>
+                  <%= post.description.substring(0, 150) %>...
+                </p>
+              </div>
+            </div>
+            <div class="article-footer">
+              <div class="article-date"><small>
+                  <%= post.created%>
+                </small></div>
+              <div class="article-button">
+                <small>
+                  <a href="/post/<%= post._id%>">Leer ></a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <% })%>
+            <% } else { %>
+              <p>No items found</p>
+              <% } %>
+    </div>
+    <% if(pages> 0) { %>
+      <!-- show pagination if there is pages -->
+      <ul class="pagination">
+        <!-- FIRST ITEM -->
+
+        <!-- ITEMS  -->
+        <% var i=(Number(current)> 5 ? Number(current) - 4 : 1) %>
+          <% if(i !==1) { %>
+            <li class="page-item disabled">
+              <a class="page-link" href="#">...</a>
+            </li>
+            <% } %>
+              <% for(; i <=(Number(current) + 4) && i <=pages; i++) { %>
+                <% if(i==current) { %>
+                  <li class="page-item page--selected">
+                    <a class="page-link" href="<%= i %>">
+                      <%= i %>
+                    </a>
+                  </li>
+                  <% } else { %>
+                    <li class="page-item">
+                      <a class="page-link" href="/nuestro_blog/<%= i %>">
+                        <%= i %>
+                      </a>
+                    </li>
+                    <% } %>
+                      <% if (i==Number(current) + 4 && i < pages) { %>
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#">...</a>
+                        </li>
+                        <% } %>
+                          <% } %>
+                            <!-- LAST ITEM -->
+
+      </ul>
+      <% } %>
+  </div>
+</div>

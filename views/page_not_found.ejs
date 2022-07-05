@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= typeof title !="undefined" ? title: "Test title" %>
+  </title>
+  <link rel="icon" type="image/x-icon" href="/img/logo.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=VT323&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&family=Jost:wght@500&family=VT323&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/page_not_found.css">
+</head>
+
+<body>
+  <header>
+    <div class="nav-container">
+      <nav>
+        <div class="logo-container">
+          <a href="/"><img src="/img/logo.png" class="logo" /></a>
+        </div>
+        <div class="menu">
+          <ul class="horizontal-menu">
+            <div class="li-container">
+              <li class="li-with-vertical-menu">
+                <a href="#" class="li-title">Planes Educativos</a>
+                <div class="plus-container">
+                  <svg class="plus" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                    stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z"
+                      fill-rule="nonzero" />
+                  </svg>
+                </div>
+
+                <ul class="vertical-menu">
+                  <div class="">
+                    <li><a href="/curso_gratuito">Curso Gratuito</a></li>
+                  </div>
+                  <li><a href="/curso_avanzado_de_trading">Curso avanzado de trading</a></li>
+                  <li><a href="/curso_de_criptomonedas">Curso de criptomonedas</a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="li-container">
+              <li class="li-with-vertical-menu">
+                <a href="#" class="li-title">Nosotros</a><svg class="plus" clip-rule="evenodd" fill-rule="evenodd"
+                  stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z"
+                    fill-rule="nonzero" />
+                </svg>
+                <ul class="vertical-menu">
+                  <li><a href="/quienes_somos">InversionesFinanz</a></li>
+                  <li><a href="/testimonios">Testimonios</a></li>
+                </ul>
+              </li>
+            </div>
+            <div class="li-container">
+              <li>
+                <a href="/nuestro_blog/1">Blog</a>
+              </li>
+            </div>
+            <div class="li-container">
+              <li>
+                <a href="/#formulario_de_contacto">Contacto</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <div class="hamburguer-logo-container">
+              <img src="/img/logo.png" class="logo" />
+            </div>
+            <!-- <li><a class="menu__item" href="#">Главная</a></li> -->
+            <li class="hamburger-li">
+              <div class="hamburger-title-plus-container">
+                <div class="plus-container">
+                  <a href="#" class="menu__item" for="submenu__toggle">Planes Educativos</a>
+                  <svg class="plus" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                    stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z"
+                      fill-rule="nonzero" />
+                  </svg>
+                </div>
+                <ul class="hamburger-sub-menu">
+                  <li><a href="/curso_gratuito">Curso Gratuito</a></li>
+                  <li><a href="/curso_avanzado_de_trading">Curso avanzado de trading</a></li>
+                  <li><a href="/curso_de_criptomonedas">Curso de criptomonedas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="hamburger-li">
+              <div class="hamburger-title-plus-container">
+                <div class="plus-container">
+                  <a href="#" class="menu__item">Nosotros</a>
+                  <svg class="plus" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round"
+                    stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z"
+                      fill-rule="nonzero" />
+                  </svg>
+                </div>
+              </div>
+              <ul class="hamburger-sub-menu">
+                <li><a href="/quienes_somos">InversionesFinanz</a></li>
+                <li><a href="/testimonios">Testimonios</a></li>
+              </ul>
+            </li>
+            <li class="hamburger-li">
+              <div class="hamburger-title-plus-container">
+                <a class="menu__item" href="/nuestro_blog/1">Blog</a>
+              </div>
+            </li>
+            <li class="hamburger-li">
+              <div class="hamburger-title-plus-container">
+                <a class="menu__item" href="/#formulario_de_contacto">Contacto</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="not_found_text">
+    <h1>Ooops...</h1>
+    <p>Parece que la página que buscas no existe</p>
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-menu">
+        <ul class="footer-menu-ul">
+          <li>
+            <p class="footer-title">Planes Educativos</p>
+            <ul>
+              <li><a href="/curso_gratuito">Curso Gratuito</a></li>
+              <li><a href="/curso_avanzado_de_trading">Curso avanzado de trading</a></li>
+              <li><a href="/curso_de_criptomonedas">Curso de criptomonedas</a></li>
+            </ul>
+          </li>
+          <li>
+            <p class="footer-title">Nosotros</p>
+            <ul>
+              <li><a href="/quienes_somos">InversionesFinanz</a></li>
+              <li><a href="/testimonios">Testimonios</a></li>
+              <li><a href="/nuestro_blog/1" class="footer-title">Blog</a></li>
+              <li><a href="/#formulario_de_contacto" class="footer-title">Contacto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

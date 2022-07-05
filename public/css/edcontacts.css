@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.delete-admin-button button{
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.admin-title p {
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+}
+
+.admin-card {
+  padding: 1rem;
+  height: fit-content;
+  width: 16rem;
+}
+
+.admin-title {
+    flex-direction: column;
+}
+
+.no-messages{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-holder {
+  height: auto;
+    min-height: 15rem;
+  display: flex;
+}
+
+.dashboard-holder p{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

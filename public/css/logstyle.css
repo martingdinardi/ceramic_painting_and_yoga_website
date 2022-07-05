@@ -1,0 +1,109 @@
+body{
+  /* background-color: #39b54a; */
+}
+
+.login-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* background-color: brown; */
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  width: 40rem;
+    height: 30rem;
+}
+.login{
+  height: 30rem;
+  width: 20rem;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  /* background-color: brown; */
+}
+.login-elements-holder{
+  display: flex;
+}
+.banner{
+  height: 30rem;
+  width: 20rem;
+  background-color: cadetblue;
+  background-image: url(/img/admin_banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: bottom;
+}
+.logo{
+  height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.form-holder{
+  height: 60%;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+  width: 80%;
+  border-color: #39b54a;
+    margin-bottom: 1rem;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-width: thin;
+    padding: 0;
+    font-size: 1rem;
+    font-family: system-ui;
+    color: #2e2e2e;
+}
+
+form input:focus{
+  outline: none;
+}
+
+button{
+  border: none;
+    width: 80%;
+    height: 3rem;
+    color: #fff;
+    background-color: #39b54a;
+    font-size: large;
+    font-family: system-ui;
+    cursor: pointer;
+    margin-top: 2rem;
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 410px) {
+  /* For mobile: */
+
+}
+
+@media only screen and (max-width: 680px) {
+  /* For mobile: */
+  .banner{display: none !important; }
+  .login-container{width: 100% !important;}
+  .login-elements-holder {
+    justify-content: center !important;
+}
+}
+
+@media only screen and (max-width: 815px) {
+  /* For tablet: */
+}
+
+@media only screen and (max-width: 900px) {
+  /* For pc, tv: */
+  
+}

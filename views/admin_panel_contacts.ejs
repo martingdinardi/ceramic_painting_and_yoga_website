@@ -1,0 +1,40 @@
+<% if(contacts !="" ) { %>
+  <div class="contacts">
+    <% contacts.forEach(function(contact, index){ %>
+      <form action="/admin/delete_contact/<%= contact._id%>" method="post">
+        <div class="admin-card">
+          <div class="admin-title">
+            <p>
+              Nombre:
+              <%= contact.name%>
+            </p>
+
+            <p>
+              País:
+              <%= contact.country%>
+            </p>
+            <p>
+              Email:
+              <%= contact.email%>
+            </p>
+            <p>
+              Teléfono:
+              <%= contact.phone%>
+            </p>
+          </div>
+          <div class="delete-admin-button">
+            <button type="submit"> Eliminar
+            </button>
+          </div>
+        </div>
+      </form>
+
+
+      <% })%>
+  </div>
+
+  <% } else { %>
+    <div class="no-messages">
+      <p>No hay mensajes..</p>
+    </div>
+    <% }%>

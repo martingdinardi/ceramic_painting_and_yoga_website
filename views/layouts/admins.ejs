@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Admins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=VT323&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500&family=Jost:wght@500&family=VT323&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/adpstyle.css" />
+  <link rel="stylesheet" href="/css/edpost.css">
+  <link rel="stylesheet" href="/css/admins.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-menu">
+      <div class="left-menu-elements">
+        <div class="left-menu-item">
+          <a href="/panel/home/"><img src="/img/home.svg" /></a>
+        </div>
+        <div class="left-menu-item item-selected">
+          <a href="/admin/admins"><img src="/img/admin.svg" alt="" /></a>
+        </div>
+        <div class="left-menu-item" style=" position: relative; ">
+          <a href="/admin/contacts"><img src="/img/messages.svg" alt="" /></a>
+          <p class="contact-notification">
+            <%= contacts %>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="dashboard-container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/">
+            <img src="/img/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="greeting">
+          <p><span class="name">Admins</span></p>
+        </div>
+      </div>
+      <div class="dashboard-holder">
+        <%- body -%>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

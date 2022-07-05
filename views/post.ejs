@@ -1,0 +1,75 @@
+<% if(post !=null) {%>
+  <div class="post-holder test-holder">
+    <div class="post-elements">
+      <div class="post">
+        <div class="post-img-title-description">
+          <div class="post-img-holder" style="
+          background: url('<%= post.image %>');
+          background-position-y: center;
+          background-size: cover;
+          height: 25rem;
+      ">
+            <!-- <img src="<%= post.image %>" /> -->
+          </div>
+          <div class="post-title-holder">
+            <h1>
+              <%= post.title %>
+            </h1>
+            <div class="post-date-views">
+              <% if(days !=1) {%>
+                <p class="post-publicated-date">Hace <%= days %> días</p>
+                <% } else{ %>
+                  <p class="post-publicated-date">Hace <%= days %> día</p>
+                  <% } %>
+                    <div class="post-views">
+                      <img src="/img/views.svg" alt="" />
+                      <p class="read-time">
+                        <%= post.visit_counter %>
+                      </p>
+                    </div>
+            </div>
+          </div>
+          <div class="post-description-holder">
+            <div class="post-description">
+              <p>
+                <%= post.description %>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--       <div class="post-footer">
+        <div class="post-views">
+          <img src="/img/views.svg" alt="" />
+          <p class="read-time">1895</p>
+        </div>
+      </div> -->
+      </div>
+      <div class="recent-posts-aside">
+        <div class="recent-posts-title">
+          <h3>Posts Recientes</h3>
+        </div>
+        <% if(posts !="" ) { %>
+          <% posts.latestPosts.forEach(function(post, index){ %>
+            <a href="/post/<%= post._id%>">
+              <div class="article">
+                <div class="article-img">
+                  <img src="<%= post.image%>" alt="" />
+                </div>
+                <div class="article-text">
+                  <div class="article-title">
+                    <p>
+                      <%= post.title%>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <% })%>
+              <% } else { %>
+                <p>No items found</p>
+                <% } %>
+      </div>
+    </div>
+  </div>
+  <% }%>

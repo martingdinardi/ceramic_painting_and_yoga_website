@@ -1,0 +1,94 @@
+<body>
+  <div class="dashboard">
+    <div class="posts-container">
+      <div class="dashboard-title">
+        <h1>Posts publicados</h1>
+      </div>
+      <div class="posts">
+        <% if(posts !="" ) { %>
+          <% posts.latestPosts.forEach(function(post, index){ %>
+
+            <div class="dashboard-post-card">
+              <a href="/post/<%= post._id %>">
+                <div class="post-image">
+                  <img src="<%= post.image%>" />
+                </div>
+              </a>
+              <div class="post-title">
+                <p>
+                  <%= post.title%>
+                </p>
+              </div>
+              <div class="post-buttons">
+                <form action="/admin/edit_post/<%= post._id %>" class="edit-post-form">
+                  <button class="edit" type="submit">Editar</button>
+                </form>
+                <form action="/admin/delete/<%= post._id %>" method="POST" class="delete-post-form">
+                  <button class="delete" type="submit">Eliminar</button>
+                </form>
+              </div>
+            </div>
+
+            <% })%>
+              <% } else { %>
+                <p>No items found</p>
+                <% } %>
+      </div>
+      <% if(pages> 0) { %>
+        <!-- show pagination if there is pages -->
+        <ul class="pagination">
+          <!-- FIRST ITEM -->
+
+          <!-- ITEMS  -->
+          <% var i=(Number(current)> 5 ? Number(current) - 4 : 1) %>
+            <% if(i !==1) { %>
+              <li class="page-item disabled">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <% } %>
+                <% for(; i <=(Number(current) + 4) && i <=pages; i++) { %>
+                  <% if(i==current) { %>
+                    <li class="page-item page--selected">
+                      <a class="page-link" href="<%= i %>">
+                        <%= i %>
+                      </a>
+                    </li>
+                    <% } else { %>
+                      <li class="page-item">
+                        <a class="page-link" href="<%= i %>">
+                          <%= i %>
+                        </a>
+                      </li>
+                      <% } %>
+                        <% if (i==Number(current) + 4 && i < pages) { %>
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#">...</a>
+                          </li>
+                          <% } %>
+                            <% } %>
+                              <!-- LAST ITEM -->
+
+        </ul>
+        <% } %>
+    </div>
+  </div>
+  <div class="new-post">
+    <div class="new-post-title">
+      <h1>Nuevo Post</h1>
+    </div>
+    <div class="new-post-form-holder">
+      <form action="/admin/submit-post/" method="POST" enctype="multipart/form-data">
+        <input type="text" class="input-post-title" placeholder="Título del post" name="title" />
+        <textarea class="post-description" placeholder="Contenido del post" name="description"></textarea>
+        <div class="picture-and-create-post-buttons">
+          <button type="button" class="buton-file-image-input">
+            <img src="/img/picture.svg" class="upload-image" />
+            <input type="file" for="image" name="image" class="file-image-input" accept=".png, .jpg, .jpeg" />
+          </button>
+          <button type="submit" class="create-button">Publicar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="/js/admin_panel.js"></script>
+</body>

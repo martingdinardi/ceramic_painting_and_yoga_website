@@ -1,0 +1,75 @@
+<!-- <div class="admins-list">
+  <% if(admins !="" ) { %>
+    <% admins.forEach(function(admin, index){ %>
+      <div class="admins-list">
+      <form action="/admin/delete_admin/<%= admin._id%>" method="post">
+
+        <div class="admin-card">
+          <div class="admin-title">
+            <p>
+              <%= admin.username%>
+            </p>
+          </div>
+          <div class="delete-admin-button">
+            <button type="submit">Eliminar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+      <% })%>
+        <% } else { %>
+          <p>No items found</p>
+          <% } %>
+</div>
+<div class="create-admin">
+  Create Admin
+</div> -->
+
+<div class="dashboard">
+  <div class="posts-container">
+    <div class="dashboard-title">
+      <h1>Admins</h1>
+    </div>
+    <div class="posts">
+      <% if(admins !="" ) { %>
+        <% admins.forEach(function(admin, index){ %>
+
+          <form action="/admin/delete_admin/<%= admin._id%>" method="post">
+
+            <div class="admin-card">
+              <div class="admin-title">
+                <p>
+                  <%= admin.username%>
+                </p>
+              </div>
+              <div class="delete-admin-button">
+                <button type="submit" <% if(admin.username===admin_name ) { %> hidden <% } %>
+                    > Eliminar
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <% })%>
+            <% } else { %>
+              <p>No items found</p>
+              <% } %>
+    </div>
+  </div>
+</div>
+<div class="new-post">
+  <div class="new-post-title">
+    <h1>Nuevo Admin</h1>
+  </div>
+  <div class="new-post-form-holder">
+    <form action="/admin/create-admin/" method="POST" enctype="multipart/form-data">
+      <input type="text" class="input-post-title" placeholder="Nombre de usuario" name="username" />
+      <input type="password" class="input-post-title" placeholder="Password" name="password" />
+      <div class="picture-and-create-post-buttons">
+        <button type="submit" class="create-button">Crear Admin</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="/js/admin_panel.js"></script>
