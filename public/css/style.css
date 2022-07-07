@@ -623,7 +623,8 @@ footer{
 .post-description-holder p{
   font-size: 0.90rem;
   white-space: pre-line;
-  word-break: break-all;
+  /* word-break: break-all; */
+  word-break: break-word;
   text-align: justify;
 }
 
