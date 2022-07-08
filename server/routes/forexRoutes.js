@@ -11,9 +11,9 @@ router.get("/", postController.home);
 router.get("/post/:id", postController.postPage);
 router.get("/quienes_somos", userController.who_we_are);
 router.get("/nuestro_blog/:page", userController.our_blog);
-router.get("/curso_gratuito", userController.free_course);
-router.get("/curso_avanzado_de_trading", userController.advanced_course);
-router.get("/curso_de_criptomonedas", userController.cripto_course);
+router.get("/curso_de_ceramica", userController.free_course);
+router.get("/curso_de_yoga", userController.advanced_course);
+router.get("/curso_de_pintura", userController.cripto_course);
 router.post("/enviar_formulario", userController.user_contact);
 router.get("/testimonios", userController.testimonials);
 

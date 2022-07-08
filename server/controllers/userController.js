@@ -37,9 +37,9 @@ exports.our_blog = async (req, res) => {
 
 exports.free_course = async (req, res) => {
   try {
-    res.render("free_course", {
+    res.render("ceramic_course", {
       layout: "layouts/main",
-      title: "Curso Gratuito",
+      title: "Curso de cerámica y alfarería, cerámica para todos",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");
@@ -48,9 +48,9 @@ exports.free_course = async (req, res) => {
 
 exports.advanced_course = async (req, res) => {
   try {
-    res.render("advanced_course", {
+    res.render("yoga_course", {
       layout: "layouts/main",
-      title: "Curso Avanzado de Trading",
+      title: "Curso de yoga para principiantes",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");
@@ -59,9 +59,9 @@ exports.advanced_course = async (req, res) => {
 
 exports.cripto_course = async (req, res) => {
   try {
-    res.render("cripto_course", {
+    res.render("painting_course", {
       layout: "layouts/main",
-      title: "Curso de Criptomonedas",
+      title: "Curso de arte y pintura",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");
