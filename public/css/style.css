@@ -876,7 +876,8 @@ footer {
   margin-right: 5rem;
 }
 
-.left-text {
+.left-text,
+.works-title {
   /* width: 90%; */
   padding: 2rem 2rem 0 2rem;
   font-family: Lucile console;
@@ -890,6 +891,66 @@ footer {
   margin-bottom: 2rem;
   font-family: 'Beth Ellen', cursive;
 }
+
+.course-works {
+  width: 90%;
+  background-color: white;
+}
+
+.works-title p {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 1.2rem;
+}
+
+.works-subtitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Beth Ellen', cursive;
+  color: #256255;
+  margin: 1.5rem 0;
+}
+
+.works-examples-container {
+  display: flex;
+  justify-content: center;
+}
+
+.works-examples {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work {
+  width: 33%;
+  text-align: center;
+  font-family: Lucile console;
+  font-size: 1.05rem;
+  padding: 0.5rem;
+}
+
+.work h3 {
+  font-size: 1.7rem;
+  font-family: 'Beth Ellen', cursive;
+  margin: 1rem 0;
+}
+
+.work p {
+  padding: 0 2.1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.work img {
+  width: 70%;
+}
+
+/* .course-testimonials-works h1 {
+  font-family: 'Beth Ellen', cursive;
+  color: #0ccda4;
+  font-size: 2rem;
+} */
 
 .course-page-description p,
 .course-page-we-offers p,
