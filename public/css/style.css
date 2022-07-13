@@ -389,10 +389,6 @@ button {
   letter-spacing: 2px;
 }
 
-.course-page-elements {
-  margin: 1rem 0;
-}
-
 .course-description {
   margin-top: 1rem;
   line-height: 1.4rem;
@@ -410,8 +406,9 @@ button {
 }
 
 .course-description-container h1 {
-  font-family: 'The Nautigal', cursive;
-  font-size: 4rem;
+  /* font-family: 'The Nautigal', cursive; */
+  font-family: 'Beth Ellen', cursive;
+  font-size: 2rem;
   color: #0ccda4;
   font-weight: 500;
 }
@@ -808,10 +805,90 @@ footer {
   margin-bottom: 3rem;
 } */
 
-.course-page-elements {
+.course-page-welcome-elements,
+.course-content-elements {
   width: 90%;
   background-color: white;
-  display: flex
+  display: flex;
+}
+
+.course-content-elements {
+  position: relative;
+}
+
+.course-content-elements ul {
+  width: 16rem;
+  position: absolute;
+  text-align: justify;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.course-content-elements ul li {
+  font-family: Lucile console;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  /* list-style: disc; */
+  text-align: left;
+}
+
+.course-content-elements-title {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  font-family: 'Beth Ellen', cursive;
+  color: #fdcf01;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.left-content-image {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  padding: 2rem;
+}
+
+.left-content-image img {
+  width: 18rem;
+}
+
+.left-content-image p {
+  font-family: Lucile console;
+  font-size: 1.2rem;
+}
+
+.right-content {
+  width: 50%;
+  text-align: right;
+  padding: 2rem;
+}
+
+.right-content img {
+  width: 15rem;
+  margin-right: 5rem;
+}
+
+.left-text {
+  /* width: 90%; */
+  padding: 2rem 2rem 0 2rem;
+  font-family: Lucile console;
+  font-size: 1.35rem;
+}
+
+
+.left-content-image p {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  margin-bottom: 2rem;
+  font-family: 'Beth Ellen', cursive;
 }
 
 .course-page-description p,
