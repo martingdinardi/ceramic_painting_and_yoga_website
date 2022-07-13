@@ -389,9 +389,53 @@ button {
   letter-spacing: 2px;
 }
 
+.course-page-elements {
+  margin: 1rem 0;
+}
+
 .course-description {
   margin-top: 1rem;
   line-height: 1.4rem;
+}
+
+.course-description-container {
+  width: 70%;
+  padding: 2rem;
+  text-align: justify;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #256255;
+}
+
+.course-description-container h1 {
+  font-family: 'The Nautigal', cursive;
+  font-size: 4rem;
+  color: #0ccda4;
+  font-weight: 500;
+}
+
+.course-description-container-elements {
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-description-container-elements .description--paragraph {
+  line-height: 1.55rem;
+  font-size: 0.9rem;
+  color: white;
+  text-indent: 1.5rem;
+}
+
+.course-description-container-elements .teacher--sign {
+  text-align: right;
+  font-family: 'Meddon', cursive;
+  font-size: 1.34rem;
+  color: white;
 }
 
 .who-we-are-container {
@@ -766,6 +810,8 @@ footer {
 
 .course-page-elements {
   width: 90%;
+  background-color: white;
+  display: flex
 }
 
 .course-page-description p,
