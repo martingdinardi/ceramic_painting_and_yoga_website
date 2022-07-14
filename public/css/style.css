@@ -874,10 +874,10 @@ footer {
 .right-content img {
   width: 15rem;
   margin-right: 5rem;
+  border-top-left-radius: 150px;
 }
 
-.left-text,
-.works-title {
+.left-text {
   /* width: 90%; */
   padding: 2rem 2rem 0 2rem;
   font-family: Lucile console;
@@ -890,16 +890,22 @@ footer {
   transform: rotate(-180deg);
   margin-bottom: 2rem;
   font-family: 'Beth Ellen', cursive;
+  color: #fdcf01;
 }
 
-.course-works {
+.course-works,
+.course-testimonials {
   width: 90%;
   background-color: white;
 }
 
-.works-title p {
+.course-testimonials-title p {
   font-family: 'Beth Ellen', cursive;
   font-size: 1.2rem;
+}
+
+.course-testimonials-container {
+  padding: 2rem;
 }
 
 .works-subtitle {
@@ -907,7 +913,7 @@ footer {
   font-size: 2.5rem;
   font-family: 'Beth Ellen', cursive;
   color: #256255;
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .works-examples-container {
