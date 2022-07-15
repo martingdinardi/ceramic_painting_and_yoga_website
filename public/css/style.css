@@ -402,7 +402,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #256255;
+  background-color: #346e69;
 }
 
 .course-description-container h1 {
@@ -849,6 +849,11 @@ footer {
   width: 50%;
 }
 
+.left-students,
+.right-students {
+  width: 40%;
+}
+
 .left-content-image {
   display: flex;
   justify-content: space-between;
@@ -885,7 +890,8 @@ footer {
 }
 
 
-.left-content-image p {
+.left-content-image p,
+.student_name {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
   margin-bottom: 2rem;
@@ -893,19 +899,9 @@ footer {
   color: #fdcf01;
 }
 
-.course-works,
-.course-testimonials {
+.course-works {
   width: 90%;
   background-color: white;
-}
-
-.course-testimonials-title p {
-  font-family: 'Beth Ellen', cursive;
-  font-size: 1.2rem;
-}
-
-.course-testimonials-container {
-  padding: 2rem;
 }
 
 .works-subtitle {
@@ -926,6 +922,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .work {
@@ -950,6 +947,84 @@ footer {
 
 .work img {
   width: 70%;
+}
+
+.student_2 {
+  width: 12rem;
+  border-bottom-right-radius: 110px;
+}
+
+.left-students-text h1 {
+  font-size: 1.5rem;
+  font-family: 'Beth Ellen', cursive;
+  color: #0ccda4;
+  margin: 0 0 1.5rem 0;
+  font-weight: 100;
+}
+
+.left-student-image,
+.right-student-image {
+  display: flex;
+  position: relative;
+}
+
+.right-student-image {
+  flex-direction: row-reverse;
+}
+
+.left-student-image h3,
+.right-student-image h3 {
+  right: 0;
+  /* font-family: 'Beth Ellen', cursive; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.course-students-elements {
+  width: 90%;
+  /* background-color: #256255; */
+  background-color: #346e69;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student_2_testimonial,
+.student_1_testimonial {
+  width: 55%;
+  position: absolute;
+  top: 5%;
+  right: 0;
+}
+
+.student_1 {
+  border-bottom-right-radius: 0px;
+  width: 16rem;
+  border-bottom-left-radius: 120px;
+}
+
+.student_1_testimonial {
+  left: 0;
+  top: 62%;
+  width: 90%;
+}
+
+.student_name {
+  font-size: 1.6rem;
+  color: #0ccda4
+}
+
+.right-students .student_name {
+  text-align: end;
+  margin-top: 2rem;
+}
+
+.right-students {
+  padding: 0.5rem;
 }
 
 /* .course-testimonials-works h1 {
