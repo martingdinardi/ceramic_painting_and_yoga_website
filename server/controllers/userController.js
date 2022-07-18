@@ -2,14 +2,6 @@ require("../models/database");
 const Post = require("../models/Post");
 const Contact = require("../models/Contact");
 
-exports.who_we_are = (req, res) => {
-  res.render("who_we_are", { layout: "layouts/main", title: "Quienes Somos" });
-};
-
-exports.testimonials = (req, res) => {
-  res.render("testimonials", { layout: false, title: "Testimonios" });
-};
-
 exports.our_blog = async (req, res) => {
   try {
     const limitNumber = 6;
@@ -35,7 +27,7 @@ exports.our_blog = async (req, res) => {
   }
 };
 
-exports.free_course = async (req, res) => {
+exports.ceramic_course = async (req, res) => {
   try {
     res.render("ceramic_course", {
       layout: "layouts/main",
@@ -46,7 +38,7 @@ exports.free_course = async (req, res) => {
   }
 };
 
-exports.advanced_course = async (req, res) => {
+exports.yoga_course = async (req, res) => {
   try {
     res.render("yoga_course", {
       layout: "layouts/main",
@@ -57,7 +49,7 @@ exports.advanced_course = async (req, res) => {
   }
 };
 
-exports.cripto_course = async (req, res) => {
+exports.painting_course = async (req, res) => {
   try {
     res.render("painting_course", {
       layout: "layouts/main",
