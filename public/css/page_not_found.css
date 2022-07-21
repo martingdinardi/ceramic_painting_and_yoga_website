@@ -1,12 +1,12 @@
-body{
+body {
   height: 100vh
 }
 
-header{
+header {
   height: 15vh;
 }
 
-.not_found_text{
+.not_found_text {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -15,15 +15,15 @@ header{
   padding: 0 0.5rem;
 }
 
-.not_found_text p{
+.not_found_text p {
   text-align: center;
   margin-top: 0.2rem;
 }
 
-footer{
+footer {
   height: 35vh;
 }
 
-h1{
-  color: #39b54a
+h1 {
+  color: #2DD2C1;
 }

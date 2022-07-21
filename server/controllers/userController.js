@@ -74,16 +74,17 @@ exports.user_contact = async (req, res) => {
   try {
     const newContact = new Contact({
       name: req.body.name,
-      country: req.body.country,
       email: req.body.email,
       phone: req.body.phone,
+      course: req.body.course
     });
-
+    
     await newContact.save();
     res.render("success_contact", {
       layout: false,
     });
   } catch (error) {
+    console.log(error)
     res.status(500).send("test send message");
   }
 };

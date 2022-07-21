@@ -6,10 +6,6 @@ const ContactSchema = new mongoose.Schema(
       type: String,
       required: "This field is required",
     },
-    country: {
-      type: String,
-      required: "This field is required",
-    },
     email: {
       type: String,
       required: "This field is required",
@@ -21,6 +17,9 @@ const ContactSchema = new mongoose.Schema(
       type: Boolean,
       default: false,
     },
+    course: {
+      type: String
+    }
   },
   { timestamps: true }
 );
