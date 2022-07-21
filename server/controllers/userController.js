@@ -2,6 +2,14 @@ require("../models/database");
 const Post = require("../models/Post");
 const Contact = require("../models/Contact");
 
+exports.who_we_are = async (req, res) => {
+  try {
+    res.render("who_we_are");
+  } catch (error) {
+    res.status(500).send("an error ocurred, please try again");
+  }
+} 
+
 exports.our_blog = async (req, res) => {
   try {
     const limitNumber = 6;

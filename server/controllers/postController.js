@@ -14,7 +14,7 @@ exports.home = async (req, res) => {
     const posts = { latestPosts };
 
     res.render("index", {
-      title: "Homepage",
+      title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA TALLER",
       posts,
     });
   } catch (error) {

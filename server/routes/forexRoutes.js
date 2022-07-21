@@ -13,7 +13,9 @@ router.get("/nuestro_blog/:page", userController.our_blog);
 router.get("/curso_de_ceramica", userController.ceramic_course);
 router.get("/curso_de_yoga", userController.yoga_course);
 router.get("/curso_de_pintura", userController.painting_course);
+router.get("/quienes_somos", userController.who_we_are);
 router.post("/enviar_formulario", userController.user_contact);
+
 
 /* Admin Routes*/
 

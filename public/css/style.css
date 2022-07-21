@@ -774,6 +774,45 @@ footer {
   width: 90%;
 }
 
+.who-we-are-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who-we-are-left {
+  width: 50%;
+}
+
+.who-we-are-left-elements {
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-we-are-left-text {
+  margin: 1rem 0;
+  width: 75%;
+}
+
+.who-we-are-left h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 3.2rem;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.who-we-are-left p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: slategrey;
+  font-family: system-ui;
+  margin-top: 0.6rem;
+}
+
 .who-we-are-traders {
   display: flex;
   margin-bottom: 1rem;
