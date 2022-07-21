@@ -4,7 +4,9 @@ const Contact = require("../models/Contact");
 
 exports.who_we_are = async (req, res) => {
   try {
-    res.render("who_we_are");
+    res.render("who_we_are", {
+      title: "Quienes Somos - DELLA PIETRA ESPACIO MULTIARTE"
+    });
   } catch (error) {
     res.status(500).send("an error ocurred, please try again");
   }
@@ -25,7 +27,7 @@ exports.our_blog = async (req, res) => {
     const posts = { latestPosts };
     res.render("our_blog", {
       layout: "layouts/main",
-      title: "Nuestro Blog",
+      title: "Nuestro Blog - DELLA PIETRA ESPACIO MULTIARTE",
       posts,
       current: page,
       pages: Math.ceil(counterPosts / limitNumber),
@@ -39,7 +41,7 @@ exports.ceramic_course = async (req, res) => {
   try {
     res.render("ceramic_course", {
       layout: "layouts/main",
-      title: "Curso de cerámica y alfarería, cerámica para todos",
+      title: "Taller de Cerámica & Alfarería - DELLA PIETRA ESPACIO MULTIARTE",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");
@@ -50,7 +52,7 @@ exports.yoga_course = async (req, res) => {
   try {
     res.render("yoga_course", {
       layout: "layouts/main",
-      title: "Curso de yoga para principiantes",
+      title: "Clases de Yoga - DELLA PIETRA ESPACIO MULTIARTE",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");
@@ -61,7 +63,7 @@ exports.painting_course = async (req, res) => {
   try {
     res.render("painting_course", {
       layout: "layouts/main",
-      title: "Curso de arte y pintura",
+      title: "Taller de Arte & Pintura - DELLA PIETRA ESPACIO MULTIARTE",
     });
   } catch (err) {
     res.status(500).send("an error ocurred, please try again");

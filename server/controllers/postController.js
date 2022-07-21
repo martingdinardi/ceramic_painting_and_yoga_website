@@ -14,7 +14,7 @@ exports.home = async (req, res) => {
     const posts = { latestPosts };
 
     res.render("index", {
-      title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA TALLER",
+      title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA ESPACIO MULTIARTE",
       posts,
     });
   } catch (error) {

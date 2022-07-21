@@ -454,7 +454,7 @@ button {
 
 .who-we-are-title p {
   font: 500 2.5rem/125% 'Jost', sans-serif;
-  color: #E6E7E8;
+  color: #4b4949;
   margin: 1rem 0;
 }
 
@@ -771,7 +771,7 @@ footer {
 }
 
 .who-we-are-page-elements {
-  width: 90%;
+  width: 80%;
 }
 
 .who-we-are-page-container {
@@ -780,25 +780,34 @@ footer {
   justify-content: center;
 }
 
-.who-we-are-left {
-  width: 50%;
+.who-we-are-left,
+.who-we-are-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
 }
 
-.who-we-are-left-elements {
+.who-we-are-right {
+  width: 60%;
+}
+
+.who-we-are-left-elements,
+.who-we-are-right-elements {
   width: 70%;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
 }
 
 .who-we-are-left-text {
   margin: 1rem 0;
-  width: 75%;
+  /* width: 75%; */
 }
 
-.who-we-are-left h1 {
+.who-we-are-left h1,
+.who-we-are-left-right h1 {
   font-family: 'Tangerine', cursive;
   font-size: 3.2rem;
   margin: 0.5rem 0;
@@ -811,6 +820,43 @@ footer {
   color: slategrey;
   font-family: system-ui;
   margin-top: 0.6rem;
+}
+
+.who-we-are-left-right {
+  display: flex;
+}
+
+.who-we-are-page-title p {
+  font: 500 3.5rem/125% 'Jost', sans-serif;
+  color: #4b4949;
+  margin: 1.8rem 0;
+}
+
+.who-we-are-right-elements p {
+  text-align: justify;
+  font-size: 0.95rem;
+  /* font-family: 'Jost', sans-serif; */
+  font-weight: 100;
+  margin: 0.7rem 0;
+  color: #4c4848;
+}
+
+.who_we_are_student {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.who_we_are_student p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: slategrey;
+  font-family: system-ui;
+  margin-top: 0.6rem;
+  font-weight: 400;
+  width: 70%;
+  text-align: center;
 }
 
 .who-we-are-traders {
