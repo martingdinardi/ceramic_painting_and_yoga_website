@@ -84,7 +84,7 @@ exports.user_contact = async (req, res) => {
       layout: false,
     });
   } catch (error) {
-    console.log(error)
-    res.status(500).send("test send message");
+    const errorMessage = req.flash("error", "El nombre y el email son obligatorios*")
+    res.status(500).redirect("/#formulario_de_contacto")
   }
 };

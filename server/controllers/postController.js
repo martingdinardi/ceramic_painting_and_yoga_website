@@ -5,6 +5,9 @@ const Post = require("../models/Post");
 /*Home*/
 
 exports.home = async (req, res) => {
+
+  const errorMessage = req.flash("error");
+
   try {
     const limitNumber = 3;
     const latestPosts = await Post.find({})
@@ -16,6 +19,7 @@ exports.home = async (req, res) => {
     res.render("index", {
       title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA ESPACIO MULTIARTE",
       posts,
+      errorMessage
     });
   } catch (error) {
     res.status(500).send({ message: error.message || "An error occured" });

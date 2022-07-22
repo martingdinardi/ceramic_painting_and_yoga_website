@@ -135,7 +135,6 @@ ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .banner-container {
@@ -458,6 +457,22 @@ button {
   margin: 1rem 0;
 }
 
+.errorMessage_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorMessage {
+  width: 50%;
+  margin: 1rem 0;
+  text-align: end;
+  color: red;
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+
 .contact-form {
   text-align: center;
 }
@@ -778,6 +793,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #f1f1f1;
 }
 
 .who-we-are-left,
@@ -839,6 +855,7 @@ footer {
   font-weight: 100;
   margin: 0.7rem 0;
   color: #4c4848;
+  padding: 0.8rem 0;
 }
 
 .who_we_are_student {
