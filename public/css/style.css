@@ -1280,13 +1280,9 @@ footer {
   .our-courses-title {
     margin: 1.5rem 0;
   }
-
-  .course {
-    margin-bottom: 1.5rem;
-  }
 }
 
-@media only screen and (max-width: 814px) {
+@media only screen and (max-width: 768px) {
 
   /* For small tablet: */
   /*   .banner-container {
@@ -1314,12 +1310,18 @@ footer {
   }
 
   .course {
-    width: 20rem;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 1rem;
   }
 
   .our-courses-courses {
     flex-direction: column;
     align-items: center;
+  }
+
+  .our-courses-courses a {
+    width: 20rem;
   }
 
   /* .who-we-are-title{
@@ -1362,6 +1364,18 @@ footer {
 
   .footer-menu-ul li {
     margin-right: 0;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .logo {
+    width: inherit;
+  }
+
+  .our-blog .article {
+    width: 20rem;
   }
 }
 
