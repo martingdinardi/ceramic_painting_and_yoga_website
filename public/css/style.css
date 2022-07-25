@@ -262,7 +262,7 @@ button {
 
 .menu__item {
   display: block;
-  color: #39b54a;
+  /* color: #2DD2C1; */
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
