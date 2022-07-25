@@ -311,6 +311,7 @@ button {
 .course-page-title p {
   font: 500 2.5rem/125% 'Jost', sans-serif;
   color: #4b4949;
+  margin: 1rem 0;
 }
 
 .our-courses-title {
@@ -567,7 +568,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   padding: 1rem;
 }
 
