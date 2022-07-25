@@ -299,7 +299,7 @@ button {
 
 .our-courses {
   width: 90%;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,7 +336,7 @@ button {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 0.1rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -538,13 +538,13 @@ button {
 
 .our-blog-title {
   text-align: center;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .our-blog .article {
   max-height: 28rem;
   width: 32.5%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   box-shadow: rgb(0 0 0 / 35%) 0px 15px 15px;
 }
 
@@ -630,7 +630,7 @@ button {
 }
 
 .our-blog-container .button-container button {
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 
 footer {
@@ -1312,7 +1312,6 @@ footer {
   .course {
     width: 100%;
     margin-bottom: 0;
-    margin-top: 1rem;
   }
 
   .our-courses-courses {
@@ -1362,9 +1361,9 @@ footer {
     font: 500 1.28rem/125% 'Jost', sans-serif;
   }
 
-  .footer-menu-ul li {
+  /*   .footer-menu-ul li {
     margin-right: 0;
-  }
+  } */
 
   nav {
     width: 100%;
@@ -1388,9 +1387,9 @@ footer {
   }
 
   /* .our-blog .article-home{margin: 1.5rem 0;} */
-  .our-blog-container .button-container button {
+  /* .our-blog-container .button-container button {
     margin-top: 1rem;
-  }
+  } */
 
   .course-page-features {
     display: block;
