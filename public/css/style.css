@@ -371,6 +371,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  text-align: center;
 }
 
 .course h1 {
@@ -538,14 +539,16 @@ button {
 
 .our-blog-title {
   text-align: center;
-  margin: 2rem 0;
+  margin-top: 1rem;
 }
 
 .our-blog .article {
-  max-height: 28rem;
-  width: 32.5%;
-  margin-bottom: 1rem;
+  max-height: 35rem;
+  width: 21rem;
+  margin: 0 0.2rem;
+  /* margin-bottom: 1rem; */
   box-shadow: rgb(0 0 0 / 35%) 0px 15px 15px;
+  margin-top: 1rem;
 }
 
 .our-blog .article-img {
@@ -564,15 +567,16 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   padding: 1rem;
 }
 
 .our-blog-articles {
-  width: 88%;
+  width: 100%;
   margin-top: 1rem;
-  margin-bottom: 1.5rem;
+  /* margin-bottom: 1.5rem; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .our-blog-articles .article-title {
@@ -590,14 +594,14 @@ button {
 .our-blog .article-description p {
   font-size: 0.8rem;
   color: #a3a3a3;
-  word-break: break-all;
+  word-break: break-word;
   text-align: justify;
 }
 
 .our-blog .article-description {
   text-align: left;
   width: 95%;
-  height: 100%;
+  /* height: 50%; */
   display: flex;
   align-items: center;
 }
@@ -1290,6 +1294,10 @@ footer {
     text-align: center;
   } */
 
+  .yoga-course {
+    margin: 1rem 0;
+  }
+
   .index-page-banner-title,
   .course-page-course-title {
     font: 500 3rem/125% 'Jost', sans-serif;
@@ -1311,7 +1319,7 @@ footer {
 
   .course {
     width: 100%;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
   }
 
   .our-courses-courses {
