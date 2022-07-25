@@ -4,21 +4,32 @@
       <form action="/admin/delete_contact/<%= contact._id%>" method="post">
         <div class="admin-card">
           <div class="admin-title">
-            <p>
-              Nombre:
+            <p><span class="name" style="
+              font-weight: 600;
+          ">Nombre:</span>
+
               <%= contact.name%>
             </p>
 
             <p>
-              Curso:
+              <span class="name" style="
+              font-weight: 600;
+          ">Curso:</span>
+
               <%= contact.course%>
             </p>
             <p>
-              Email:
+              <span class="name" style="
+              font-weight: 600;
+          ">Email:</span>
+
               <%= contact.email%>
             </p>
             <p>
-              Teléfono:
+              <span class="name" style="
+              font-weight: 600;
+          ">Teléfono:</span>
+
               <%= contact.phone%>
             </p>
           </div>
