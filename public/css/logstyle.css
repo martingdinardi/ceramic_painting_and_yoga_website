@@ -1,8 +1,8 @@
-body{
+body {
   /* background-color: #39b54a; */
 }
 
-.login-container{
+.login-container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -12,20 +12,23 @@ body{
   /* background-color: brown; */
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   width: 40rem;
-    height: 30rem;
+  height: 30rem;
 }
-.login{
+
+.login {
   height: 30rem;
   width: 20rem;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   /* background-color: brown; */
 }
-.login-elements-holder{
+
+.login-elements-holder {
   display: flex;
 }
-.banner{
+
+.banner {
   height: 30rem;
   width: 20rem;
   background-color: cadetblue;
@@ -35,54 +38,60 @@ body{
   background-position-x: center;
   background-position-y: bottom;
 }
-.logo{
-  height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+
+.logo {
+  height: 14rem;
+  filter: invert(94%) sepia(170%) saturate(1508%) hue-rotate(112deg) brightness(112%) contrast(65%);
 }
 
-.form-holder{
+.form-holder {
   height: 60%;
 }
 
-form{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 form input {
   width: 80%;
-  border-color: #39b54a;
-    margin-bottom: 1rem;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-width: thin;
-    padding: 0;
-    font-size: 1rem;
-    font-family: system-ui;
-    color: #2e2e2e;
+  border-color: #2DD2C1;
+  margin-bottom: 1rem;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-width: thin;
+  padding: 0;
+  font-size: 1rem;
+  font-family: system-ui;
+  color: #2e2e2e;
 }
 
-form input:focus{
+form input:focus {
   outline: none;
 }
 
-button{
+button {
   border: none;
-    width: 80%;
-    height: 3rem;
-    color: #fff;
-    background-color: #39b54a;
-    font-size: large;
-    font-family: system-ui;
-    cursor: pointer;
-    margin-top: 2rem;
-    border-radius: 0.25rem;
+  width: 80%;
+  height: 3rem;
+  color: #fff;
+  background-color: #2DD2C1;
+  font-size: large;
+  font-family: system-ui;
+  cursor: pointer;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+}
+
+.login-logo-container {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 410px) {
@@ -91,12 +100,19 @@ button{
 }
 
 @media only screen and (max-width: 680px) {
+
   /* For mobile: */
-  .banner{display: none !important; }
-  .login-container{width: 100% !important;}
+  .banner {
+    display: none !important;
+  }
+
+  .login-container {
+    width: 100% !important;
+  }
+
   .login-elements-holder {
     justify-content: center !important;
-}
+  }
 }
 
 @media only screen and (max-width: 815px) {
@@ -105,5 +121,5 @@ button{
 
 @media only screen and (max-width: 900px) {
   /* For pc, tv: */
-  
+
 }

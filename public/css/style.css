@@ -1228,7 +1228,7 @@ footer {
 }
 
 .page-item {
-  background-color: #39b54a;
+  background-color: #2DD2C1;
   margin-right: 0.1rem;
   margin-bottom: 0.5rem;
   width: 2rem;
@@ -1236,7 +1236,7 @@ footer {
 }
 
 .page-item:hover {
-  background-color: #225f2a;
+  background-color: #228f84;
 }
 
 .page-link {
