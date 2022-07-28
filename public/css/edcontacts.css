@@ -6,7 +6,7 @@
   margin-top: 2rem;
 }
 
-.delete-admin-button button{
+.delete-admin-button button {
   width: 50%;
   margin-top: 2rem;
 }
@@ -23,21 +23,28 @@
 }
 
 .admin-title {
-    flex-direction: column;
+  flex-direction: column;
 }
 
-.no-messages{
+.no-messages {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .dashboard-holder {
   height: auto;
-    min-height: 15rem;
+  min-height: 15rem;
   display: flex;
 }
 
-.dashboard-holder p{
+.dashboard-holder p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 410px) {
+
+  .admin-card {
+    width: 11rem;
+  }
 }

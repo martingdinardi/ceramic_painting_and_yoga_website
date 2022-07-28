@@ -95,6 +95,7 @@ button {
 }
 
 @media only screen and (max-width: 410px) {
+
   /* For mobile: */
 
 }
@@ -116,7 +117,11 @@ button {
 }
 
 @media only screen and (max-width: 815px) {
+
   /* For tablet: */
+  .logo {
+    height: 8rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {

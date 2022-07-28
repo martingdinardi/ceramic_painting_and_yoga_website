@@ -155,10 +155,10 @@
 }
 
 .post-elements {
-  /* background: brown; */
-  /* width: 70%; */
+  width: 95%;
   display: flex;
   justify-content: space-between;
+  max-width: 40rem;
 }
 
 .post {
@@ -169,7 +169,8 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem 0;
-  min-width: 40rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .post-title-holder {
@@ -212,11 +213,13 @@
 
 /**/
 
-@media only screen and (max-width: 410px) {
-  /* For mobile: */
-}
+@media only screen and (max-width: 410px) {}
 
 @media only screen and (max-width: 814px) {
+  .logo {
+    justify-content: center;
+    width: 95%;
+  }
 
   /* For small tablet: */
   .dashboard-holder {
