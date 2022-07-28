@@ -142,6 +142,10 @@ ul li a:hover {
   text-align: center;
 }
 
+.banner-text {
+  width: 50%;
+}
+
 .course-page-course-title,
 .index-page-banner-title {
   font: 500 4rem/125% 'Jost', sans-serif;
@@ -367,6 +371,11 @@ button {
   background-position-y: bottom;
 }
 
+.course-teacher-img-container {
+  width: 30%;
+  background-position-y: bottom;
+}
+
 .course-title {
   height: 60%;
   display: flex;
@@ -410,7 +419,7 @@ button {
 .course-description-container h1 {
   /* font-family: 'The Nautigal', cursive; */
   font-family: 'Beth Ellen', cursive;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #0ccda4;
   font-weight: 500;
 }
@@ -1260,6 +1269,7 @@ footer {
 
 .pagination {
   display: flex;
+  margin-top: 1rem;
 }
 
 .page--selected {
@@ -1285,6 +1295,7 @@ footer {
   .our-courses-title {
     margin: 1.5rem 0;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1295,14 +1306,60 @@ footer {
     text-align: center;
   } */
 
+
+  .who-we-are-left-right {
+    display: block;
+  }
+
+  .who-we-are-left,
+  .who-we-are-right {
+    width: 100%;
+  }
+
+  .who-we-are-left-elements,
+  .who-we-are-right-elements {
+    width: 100%;
+  }
+
+  .course-page-welcome-elements,
+  .course-content-elements {
+    display: block;
+
+  }
+
+  .course-description-container {
+    width: 100%;
+  }
+
+  .course-teacher-img-container {
+    width: 100%;
+    background-position-y: center;
+  }
+
+  .course-description-container-elements .teacher--sign {
+    font-size: 1.1rem;
+  }
+
+  .course-description-container-elements .description--paragraph {
+    margin: 1.4rem 0;
+  }
+
+  .left-content {
+    width: 100%;
+  }
+
   .yoga-course {
     margin: 1rem 0;
+  }
+
+  .banner-text {
+    width: 100%;
   }
 
   .index-page-banner-title,
   .course-page-course-title {
     font: 500 3rem/125% 'Jost', sans-serif;
-    text-align: center;
+    /* text-align: center; */
   }
 
   .menu {
@@ -1388,6 +1445,39 @@ footer {
 }
 
 @media only screen and (max-width: 815px) {
+
+  .who-we-are-page-title p {
+    font: 500 2.5rem/125% 'Jost', sans-serif;
+    text-align: center;
+  }
+
+  .works-examples {
+    flex-direction: column;
+  }
+
+  .course-students-elements {
+    display: block;
+  }
+
+  .left-students,
+  .right-students {
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .course-content-elements ul {
+    width: 100%;
+    position: initial;
+    transform: initial;
+    padding: 0 2rem;
+  }
+
+  .course-teacher-img-container {
+    background-position-x: center;
+  }
 
   /* For tablet: */
   .our-blog-articles {
