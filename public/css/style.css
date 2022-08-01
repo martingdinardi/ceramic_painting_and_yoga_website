@@ -10,6 +10,11 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.welcome-modal-window {
+  /* width: 10rem; */
+  background-color: brown;
+}
+
 .nav-container {
   display: flex;
   justify-content: center;
