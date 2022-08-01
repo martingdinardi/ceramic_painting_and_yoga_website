@@ -11,8 +11,30 @@ body {
 }
 
 .welcome-modal-window {
-  /* width: 10rem; */
-  background-color: brown;
+  background-color: #00000094;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-modal-elements {
+  background-color: whitesmoke;
+  max-width: 30rem;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.welcome-modal-h h1 {
+  font: 500 1.5rem/125% 'Jost', sans-serif;
+}
+
+.welcome-modal-p p {
+  margin: 1rem 0;
 }
 
 .nav-container {

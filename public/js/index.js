@@ -1,13 +1,14 @@
-let newVisitor = false;
-let getLocal = localStorage.getItem("new visitor");
+let oldVisitor = localStorage.getItem("old visitor");
+let modal = document.querySelector(".welcome-modal-container");
 
-if (!getLocal) {
+if (!oldVisitor) {
   let resetDatabaseButton = document.querySelector(".reset-database-button");
-  let modal = document.querySelector(".welcome-modal-window");
   modal.removeAttribute("hidden");
+  document.body.style.overflow = "hidden"
   resetDatabaseButton.addEventListener("click", () => {
-    newVisitor = true;
-    localStorage.setItem("new visitor", newVisitor);
+    oldVisitor = true;
+    localStorage.setItem("old visitor", oldVisitor);
     modal.setAttribute("hidden", "")
+    document.body.style.overflow = "auto"
   })  
-}
+} 
