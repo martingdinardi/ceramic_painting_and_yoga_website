@@ -366,7 +366,7 @@ Margaret Keane: de entre las mujeres cuya obra fue atribuida o firmada por hombr
         image: "/default-post-images/article16.jpg",
         }    
       ]);
-      await res.redirect(`/`);
+      await res.redirect("https://ceramic-painting-yoga-blog.herokuapp.com/");
     } catch (error) {
       res.status(500).send({ message: error.message || "An error occured" });
     }
