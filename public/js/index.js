@@ -1,4 +1,4 @@
-/* let oldVisitor = localStorage.getItem("old visitor");
+let oldVisitor = localStorage.getItem("old visitor");
 let modal = document.querySelector(".welcome-modal-container");
 
 if (!oldVisitor) {
@@ -11,4 +11,4 @@ if (!oldVisitor) {
     modal.setAttribute("hidden", "")
     document.body.style.overflow = "auto"
   })  
-}  */
+} 
