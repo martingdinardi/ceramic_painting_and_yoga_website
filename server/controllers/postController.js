@@ -88,18 +88,15 @@ exports.refreshDatabase = async (req, res) => {
       const id = post.id
       await Post.findByIdAndDelete(id)
     }
-
-    
-    await fs.readdir(`${__dirname}, ../../../public/uploads`, (err, files) => {
+    /* await  */fs.readdir(`${__dirname}, ../../../public/uploads`, (err, files) => {
       if (err) throw err;
-    
-
-
-      for (const file of files) {
-        console.log(file)
-        fs.unlink(path.join(`${__dirname}, ../../../public/uploads/${file}`), err => {
-          if (err) throw err;
-        });
+      if (files) {
+        for (const file of files) {
+          /* console.log(file) */
+          fs.unlink(path.join(`${__dirname}, ../../../public/uploads/${file}`), err => {
+            if (err) throw err;
+          });
+        }
       }
     });
 
@@ -366,7 +363,7 @@ Margaret Keane: de entre las mujeres cuya obra fue atribuida o firmada por hombr
         image: "/default-post-images/article16.jpg",
         }    
       ]);
-      await res.redirect("https://ceramic-painting-yoga-blog.herokuapp.com/");
+      await res.redirect(`/`);
     } catch (error) {
       res.status(500).send({ message: error.message || "An error occured" });
     }
