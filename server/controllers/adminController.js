@@ -141,13 +141,26 @@ exports.delete_post = async (req, res) => {
     const oldImage = oldPost.image;
     const oldImagePath = path.join(__dirname, `../../public/${oldImage}`);
 
-    try {
+    const oldImageDefault = oldImage.split("/");
+      /* console.log(oldImageDefault[1] == "uploads"); */
+
+      if (oldImageDefault[1] == "uploads") {
+        try {
+          await unlink(`${oldImagePath}`);
+          console.log(`successfully deleted`);
+        } catch (error) {
+          console.error("there was an error:");
+          console.log(error);
+        }
+      }
+
+/*     try {
       await unlink(`${oldImagePath}`);
       console.log(`successfully deleted`);
     } catch (error) {
       console.error("there was an error:");
       console.log(error);
-    }
+    } */
 
     await Post.findByIdAndDelete(id);
     const token = req.cookies.token;
@@ -182,13 +195,17 @@ exports.update_post = async (req, res) => {
       const oldImage = oldPost.image;
 
       const oldImagePath = path.join(__dirname, `../../public/${oldImage}`);
+      const oldImageDefault = oldImage.split("/");
+      /* console.log(oldImageDefault[1] == "uploads"); */
 
-      try {
-        await unlink(`${oldImagePath}`);
-        console.log(`successfully deleted`);
-      } catch (error) {
-        console.error("there was an error:");
-        console.log(error);
+      if (oldImageDefault[1] == "uploads") {
+        try {
+          await unlink(`${oldImagePath}`);
+          console.log(`successfully deleted`);
+        } catch (error) {
+          console.error("there was an error:");
+          console.log(error);
+        }
       }
 
       let imageUploadFile;

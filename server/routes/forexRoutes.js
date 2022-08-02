@@ -15,6 +15,7 @@ router.get("/curso_de_yoga", userController.yoga_course);
 router.get("/curso_de_pintura", userController.painting_course);
 router.get("/quienes_somos", userController.who_we_are);
 router.post("/enviar_formulario", userController.user_contact);
+router.post("/reset_database", postController.refreshDatabase);
 
 
 /* Admin Routes*/
