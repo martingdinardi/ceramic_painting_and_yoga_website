@@ -103,7 +103,17 @@ exports.refreshDatabase = async (req, res) => {
       }
     });
 
-      await Post.insertMany([
+    await Post.insertMany([
+        {
+        title: "¡Estrenamos blog!",
+        description: `¡Estamos muy felices de estrenar este espacio! 
+        
+        Nos hemos dado cuenta que tenemos muchas cosas para contar y por eso fundamos nuestro propio blog! Un espacio donde queremos compartir las últimas novedades, tendencias, consejos y más, del mundo que rodea a nuestro taller.
+        
+        ¡Te damos la bienvenida y esperamos que lo disfrutes tanto como nosotros disfrutamos de construirlo!
+        `,
+        image: "/default-post-images/article0.jpg",
+        },
         {
           title: "El mejor momento del día para practicar yoga",
           description: `Todos los practicantes de yoga se han preguntado en alguna ocasión, cuál es el mejor momento del día para practicar.
@@ -240,7 +250,121 @@ exports.refreshDatabase = async (req, res) => {
           
           Se cree que el autorretrato fue realizado probablemente durante un momento clave en la carrera de Van Gogh, cuando estuvo expuesto a la obra de los impresionistas franceses tras mudarse a París.`,
           image: "/default-post-images/article7.jpg",
-        }
+        },
+        {
+        title: "Yoga en verano",
+        description: `El verano llega siempre abriendo las puertas de la libertad. Es el momento de andar descalza, de llevar menos ropa, de relajarse, de dejar que el amor y la alegría salga de dentro de ti. El sistema nervioso está más relajado, y te hace estar más receptiva al momento presente, a disfrutar de cada segundo.
+
+        Para mí el verano es una época alegre y en la disfruto mucho. El calor no lo suelo llevar mal, pero es cierto que, en determinados momentos necesito una pausa, respirar y refrescarme. Para ello tomo algunas precauciones y practico asanas que me ayudan a calmar y refrescar el cuerpo. Te voy a contar cómo, para que lo apliques a la hora de practicar estos meses y no abandones la práctica de yoga en verano.
+        
+        El verano anima a practicar yoga al aire libre, en el parque, en la playa, debajo de algún árbol… en cualquiera de estos sitios, el contacto con la naturaleza te ayuda a relajar el sistema nervioso y a respirar más profundamente.
+
+        Si no tienes la oportunidad de llevar tu esterilla a la naturaleza, puedes practicar en tu casa. En este caso te recomiendo que sea en un lugar lo más fresco posible, o con un ventilador que no te apunte directamente.`,
+        image: "/default-post-images/article9.jpg",
+        },
+        {
+        title: "La alfarería y la cerámica se adentran en las vanguardias",
+        description: `Es reconfortante saber que, a pesar de sus rafces antiguas, las nuevas versiones del medio tienen formas fantasiosas y colores populares. Hay muchas vasijas que pecan en el lado minimalista, pero algunas marcas ahora, prefieren la figura humana como forma para sus vasijas.
+        
+        Los rostros moldeados en porcelana china, los voluptuosos torsos moldeados en terracota y los rostros de cerámica pintados con esmaltes multicolores, pueden agregar un acento fresco a los espacios contemporáneos. 
+        
+        Otra tendencia de la cerámica que vemos crecer es Memphis Revival, una versión del siglo XXI de un movimiento de la década de 1980 creado por Ettore Sottsass. Los divertidos tonos pastel, las formas onduladas y las curvas onduladas del movimiento se ven en piezas de cerámica de Bondi y otras marcas.
+        
+        En el otro extremo del espectro de la cerámica, hay creadores que aman hacer piezas que respeten las raíces del medio. La estética de las superficies crudas, los esmaltes moteados y los tonos naturales y terrosos se destacan en las grandes ollas de Red Slab Pottery y en las ingeniosas lámparas de cerámica de Joey de Castro para Ito Kish.
+
+        Las formas orgánicas y las que provienen de la naturaleza siempre han sido las favoritas de la multitud en las ferias de diseño, y CSM nunca deja de decepcionar en ese aspecto. Sus delicados jarrones Pandanus, Pod y Pleat están inspirados en formas naturales de frutas, vainas de semillas, anémona y conchas.
+
+        Pero independientemente de las tendencias, De Castro agrega que la cerámica como forma de arte puede avanzar si no hay discriminación entre su funcionalidad y el arte. «En nuestra comunidad, no distinguimos platos y jarrones de esculturas … para nosotros, es solo uno y Io mismo, es solo eso, es arte».`,
+        image: "/default-post-images/article10.jpg",
+        },
+        {
+        title: "Fauvismo: el movimiento del color",
+        description: `El fauvismo es el movimiento artístico del color, mismo que tiene especial protagonismo en los cuadros de este estilo, sobre todo porque resalta la vivacidad de la paleta elegida por los artistas que se adhirieron a esta breve corriente a principios del siglo XX. Otro protagonista del fauvismo son los trazos, ya que destacan las pinceladas, en ocasiones grotescas, que dibujaban gruesas línea o incluso algo más parecido a los puntos, esto deja claro cómo el fauvismo rompió con los esquemas de otros movimientos de la época, al menos por un breve momento, consagrándose como una corriente más permisiva.
+
+        El fauvismo no es especialmente mencionado o reconocido en la historia del arte contemporáneo, sin embargo, cuenta con talentosos representantes, como Henri Matisse:
+
+        Sin duda el más conocido fauvista, Henri Matisse se caracterizó tanto por la simplicidad en el uso de los colores, como por la saturación y armonía que aplicaba a otros. A lo largo de su trayectoria, el artista recibió numerosos reconocimientos por su trabajo, cuyas temáticas se desenvolvían en torno a la naturaleza, los paisajes y el desnudo femenino, principalmente. 
+        
+        Lo más experimental de Matisse fueron sus papiers découpés o el arte de dibujar con tijeras, que era básicamente una especie de collages realizados con papeles de colores recortados a mano alzada.
+        `,
+        image: "/default-post-images/article11.jpg",
+        },
+        {
+        title: "Yoga para seniors, cuerpo y mente te lo agradecerán",
+        description: `El yoga es una fuente de rejuvenecimiento: su práctica ayuda a mantener la flexibilidad y la vitalidad propias de la juventud y, además, ayuda a abrazar la vida con más serenidad. 
+        
+        Pese a que parezca una actividad únicamente destinada a personas flexibles y muy en forma, el yoga ofrece muchos beneficios particularmente útiles en las personas mayores. Y no sólo se trata de ventajas a nivel físico, ya que es una práctica holística que ejercita todos los aspectos del cuerpo y la mente. Gracias a los estiramientos y los ejercicios de control de la respiración, se deshacen todas las tensiones y se induce un estado de calma y serenidad, que aporta un gran bienestar emocional.
+        
+        Con el paso de los años la musculatura se atrofia, los ligamentos se endurecen, las articulaciones pierden movilidad, la circulación se obstruye y pueden aparecer alteraciones del sistema nervioso y digestivo. La práctica de yoga ayuda a mantener la musculatura y hace los tendones y ligamentos más fuertes y flexibles. Por otra parte, a través de las presiones y de las inversiones se mejora y se revitaliza todo el sistema circulatorio. 
+        
+        Muchas de las posturas que se hacen durante una sesión ayudan a estimular los órganos internos.
+        `,
+        image: "/default-post-images/article12.jpg",
+        },
+        {
+        title: "Ventajas de usar vajillas de cerámica",
+        description: `Todos tenemos una mesa en casa donde todos no sentamos o reunimos a disfrutar nuestra comida y la vajilla es un componente importante de esta mesa ya que no podemos disfrutar nuestro desayuno, comida y cena sin una.
+        
+        Las personas han usado vajillas de cerámica desde tiempos inmemorables. También prefieren cocinar los alimentos en utensilios de cocina de cerámica. Esto se debe a que la cerámica se considera el material más saludable de todos. No es poroso y es seguro de usar.
+        
+        Los platos de cerámica son amigables con el calor así que puede usarse para cocinar alimentos en la estufa, microondas y horno. A diferencia del plástico, se puede calentar sin romperse o derretirse ya que tiene una distribución uniforme del calor. Pero esto no significa que todas las cerámicas son resistentes al calor, solo algunas son aptas por lo cual hay que asegurarnos de que la vajilla que deseamos adquirir es apta para el calor.
+
+        Como sabemos el uso de la vajilla de cerámica no es nuevo entre nosotros y lleva mucho tiempo con nosotros. Más que una ventaja, es un gusto por la conexión particular que hay en los objetos trabajados artesanalmente y el vínculo con algunos procesos y ciclos de la naturaleza. 
+
+        Esperamos que el articulo le haya ayudado a comprender el significado de la vajilla de cerámica y sus características. No olvide compartir sus comentarios y experiencias con nosotros.
+        `,
+        image: "/default-post-images/article13.jpg",
+        },
+        {
+        title: "Picasso, una máquina de pintar dinero",
+        description: `Cuando Picasso falleció hace 43 años dejó tras de sí más de 45.000 obras, y un inmenso dolor de cabeza: multitud de herederos y ningún testamento.
+
+        El catálogo de su producción artística a su muerte resultó increíble. Legó 1.885 pinturas, 1.228 esculturas, 7.089 dibujos, 30.000 grabados, 3.222 obras en cerámica y 150 libros de apuntes y bocetos. Un inventario al que hay sumar tapices, libros, 4,5 millones de dólares de la época en metálico, 1,3 millones en oro y dos chateaux, entre otras viviendas. Además de una cantidad no determinada en acciones y bonos. Un patrimonio ingente. Tanto es así que para almacenarlo “hubiera hecho falta alquilar el Empire State Building”, contará Claude Picasso, hijo del genio y de Françoise Gilot, tras finalizar el recuento.
+        
+        Pero como con el malagueño nada es sencillo, la historia se complica más al sumarle los inmensos problemas que generan la autentificación de las obras, la gestión de sus derechos o los acuerdos de reproducción de las imágenes de las piezas. Al fin y al cabo hablamos de una herencia valorada en miles de millones de euros. Muy lejos de los parcos 250 millones de dólares con los que se quiso tasar en 1980.
+
+        Porque trabajar con Picasso nunca fue fácil, ni cuando ya no estaba. No dejó testamento. Y el reparto de sus bienes duró seis años. Un tiempo en el que los siete herederos de entonces se enfrentaron en más de una ocasión. Quizá porque como sostiene Mafalda: "Las herencias nunca se reparten sino que se descuartizan". Aun así, el acuerdo costó 30 millones de dólares. Un precio relativamente razonable para un artista del que solo el año pasado se programaron 34 exposiciones en todo el mundo y que en 2015 fue capaz de vender por 179,4 millones de dólares un cuadro (Las mujeres de Argel, versión O) que ni por asomo representa lo mejor de su producción. Dio igual. Se convirtió en la obra más cara vendida jamás en subasta. Pura abstracción matemática; el cubismo de la aritmética del dinero.
+        `,
+        image: "/default-post-images/article14.jpg",
+        },
+        {
+        title: "La escultura en cerámica",
+        description: `La cerámica es un material versatil y probablemente uno de los que mejor combinan funionalidad, diseño y arte. 
+        
+        Hay diferencias, de concepto y elaboración técnica, entre una pieza bella, funcional o que puede considerarse obra de arte. Sin embargo , hay muchos artistas que desdibujan estos limites, creando objetos que sobrepasan la utilidad, que son arte y desbordan belleza. Objetos que pueden acompañarnos en nuestro día a día y hacer de las actividades cotidianas un momentos más que placentero.
+
+        Ronit Baranga nació en 1973 en Israel donde , a día de hoy , sigue viviendo y trabajando. Su trabajo se ha expuesto en numerosísimas galerías de arte de todo el mundo, tanto publicas como privadas y en museos como el Triennale Desing Museum de Milán ( 2012) o en el Dismaland Bemusement Park (2015) .
+
+        » En esta combinación y unión entre lo inmóvil y lo vivo. trato de cambiar la forma en que observamos la utilidad de la vajilla. La vajilla útil y pasiva puede ahora percibirse como un objeto activo, consciente de sí mismo y de lo le rodea. No permite que se dé por sentado su uso. Decide por sí mismo cómo comportarse en cada situación. Así es como prefiero pensar en mis platos y tazas. Metafóricamente hablando , por supuesto».`,
+        image: "/default-post-images/article8.jpg",
+        },
+        {
+        title: "Música para practicar yoga y meditación",
+        description: `La música y el yoga se combinan perfectamente, porque ayuda a alcanzar un estado de paz mental y puede reforzar los beneficios que aporta la práctica del yoga.
+
+        La música es vibración, hay música especialmente concebida para llegar a lo más profundo de nuestra mente, cada uno de nosotros tenemos alguna canción que nos traslada a ese estado mental de paz, ya sea con The Doors, Bach o con música tradicional africana. Aquí es donde entra también la música concebida especialmente para practicar Yoga o para relajarnos.
+        
+        Te proponemos una recopilación de diferentes artistas, desde cantantes de Kirtan a raperos que adaptan los mantras y se inspiran de la historia de las divinidades. Recuerda seguir con tu práctica, aunque vayas de vacaciones, la disciplina y la constancia son la clave del éxito en el camino del yoga, puedes simplemente poner la música de fondo mientras estás descansando, en casa o para meditar.`,
+        image: "/default-post-images/article15.jpg",
+        },
+        {
+        title: "Mujeres en el arte: nombres históricamente ocultos",
+        description: `No es ningún secreto que los mundillos del arte, en general, siempre han sido dominados por hombres. Aunque actualmente esto ha cambiado mucho, no significa que las mujeres hayan estado históricamente ausentes. 
+        
+        La figura femenina dentro de la pintura, por ejemplo, siempre ha sido relegado al de musa, compañera o aprendiz, y sus obras, descubrimientos o aportes han sido atribuidos a los hombres que les hacían sombra.
+
+        Los casos más conocidos de mujeres opacadas se han dado en la literatura, ya que muchas autoras tendían a firmar solo con su apellido o con un pseudónimo masculino. ¿Por qué? Porque nadie querría comprar la obra de una mujer. En el caso de otras disciplinas, más bien solían no darles créditos, como es el caso de Lee Miller, quien descubrió la solarización junto a Man Ray, pero que solo se le atribuía a él.
+
+        La pintura no es la excepción. Por eso, a continuación te presentamos tres casos a lo largo de la historia en los que el punto central es el mismo: las pinturas de mujeres eran atribuidas a hombres, por alguna u otra razón.
+
+Sofonisba Anguissola: el talento de esta artista renacentista fue reconocido por el mismo Miguel Ángel, y se desempeñó como pintora de la casa real española durante 14 años. Con la muerte de Sofonisba llegó también el olvido de su arte, y como ha pasado con muchas mujeres a lo largo de la historia, sus obras fueron atribuidas a otros; “fueron adjudicadas a Tiziano, Zurbarán, Sánchez Coello o a El Greco, entre otros” (Los ojos de Hipatia, 2015). Fue hasta hace poco que sus pinturas fueron reconocidas y debidamente atribuidas.
+
+Judith Leyster: originaria de Haarlem, Países Bajos, fue contemporánea de Frans Hal, y se dice que también su alumna en algún momento. La carrera profesional de Leyster fue corta debido a que pasó a dedicarse a las tareas domésticas cuando se casó con Jan Miense Molenaer. A este fueron atribuidas sus pinturas —o a Frans Hal—. Con el paso del tiempo, fue descubriéndose su verdadera autoría, dando paso al tardío reconocimiento de Leyster.
+
+Margaret Keane: de entre las mujeres cuya obra fue atribuida o firmada por hombres, el caso más reciente y quizá famoso es el de Margaret Keane, sobre todo porque Tim Burton retrató su historia en la película Big Eyes. Su obra se caracteriza por sus personajes de ojos grandes, que eran firmados por su esposo, Walter Keane. El hombre comenzó a atribuirse las pinturas. Pronto convirtió “su arte” en un imperio, hasta que un día Margaret decidió demandarlo y ganó.
+        `,
+        image: "/default-post-images/article16.jpg",
+        }    
       ]);
       await res.redirect(`/`);
     } catch (error) {
