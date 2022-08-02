@@ -88,12 +88,12 @@ exports.refreshDatabase = async (req, res) => {
       const id = post.id
       await Post.findByIdAndDelete(id)
     }
-    /* await  */fs.readdir(`${__dirname}, ../../../public/uploads`, (err, files) => {
+    /* await  */fs.readdir(`${__dirname}, ../../public/uploads`, (err, files) => {
       if (err) throw err;
       if (files) {
         for (const file of files) {
           /* console.log(file) */
-          fs.unlink(path.join(`${__dirname}, ../../../public/uploads/${file}`), err => {
+          fs.unlink(path.join(`${__dirname}, ../../public/uploads/${file}`), err => {
             if (err) throw err;
           });
         }
