@@ -8,6 +8,11 @@ const path = require('path');
 
 exports.home = async (req, res) => {
 
+  const uploadFolder = path.join(__dirname, "../../public/uploads")
+  if (!fs.existsSync(uploadFolder)) {
+    fs.mkdirSync(uploadFolder)
+  }
+
   const errorMessage = req.flash("error");
 
   try {
@@ -93,7 +98,7 @@ exports.refreshDatabase = async (req, res) => {
       if (err) throw err;
       if (files) {
         for (const file of files) {
-          /* console.log(file) */
+          console.log(typeof file)
           fs.unlink(path.join(`public/uploads/${file}`), err => {
             if (err) throw err;
           });
