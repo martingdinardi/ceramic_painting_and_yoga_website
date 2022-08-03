@@ -1336,8 +1336,8 @@ footer {
     font-size: 1.5rem;
   }
 
-  body {
-    overflow-x: hidden;
+  .right-content {
+    padding: 1rem;
   }
 
 }
