@@ -1474,6 +1474,10 @@ footer {
 
 @media only screen and (max-width: 815px) {
 
+  .student_1 {
+    width: 15rem;
+  }
+
   .course-content-elements-title {
     font-size: 2rem;
   }
