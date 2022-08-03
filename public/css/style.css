@@ -1474,6 +1474,10 @@ footer {
 
 @media only screen and (max-width: 815px) {
 
+  .course-content-elements-title {
+    font-size: 2rem;
+  }
+
   .who-we-are-page-title p {
     font: 500 2.5rem/125% 'Jost', sans-serif;
     text-align: center;
