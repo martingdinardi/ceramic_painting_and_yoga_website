@@ -1332,6 +1332,10 @@ footer {
     margin: 1.5rem 0;
   }
 
+  .works-subtitle {
+    font-size: 1.5rem;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
