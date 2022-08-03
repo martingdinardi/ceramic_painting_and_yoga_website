@@ -342,15 +342,6 @@ exports.refreshDatabase = async (req, res) => {
         image: "/default-post-images/article8.jpg",
         },
         {
-        title: "Música para practicar yoga y meditación",
-        description: `La música y el yoga se combinan perfectamente, porque ayuda a alcanzar un estado de paz mental y puede reforzar los beneficios que aporta la práctica del yoga.
-
-        La música es vibración, hay música especialmente concebida para llegar a lo más profundo de nuestra mente, cada uno de nosotros tenemos alguna canción que nos traslada a ese estado mental de paz, ya sea con The Doors, Bach o con música tradicional africana. Aquí es donde entra también la música concebida especialmente para practicar Yoga o para relajarnos.
-        
-        Te proponemos una recopilación de diferentes artistas, desde cantantes de Kirtan a raperos que adaptan los mantras y se inspiran de la historia de las divinidades. Recuerda seguir con tu práctica, aunque vayas de vacaciones, la disciplina y la constancia son la clave del éxito en el camino del yoga, puedes simplemente poner la música de fondo mientras estás descansando, en casa o para meditar.`,
-        image: "/default-post-images/article15.jpg",
-        },
-        {
         title: "Mujeres en el arte: nombres históricamente ocultos",
         description: `No es ningún secreto que los mundillos del arte, en general, siempre han sido dominados por hombres. Aunque actualmente esto ha cambiado mucho, no significa que las mujeres hayan estado históricamente ausentes. 
         
