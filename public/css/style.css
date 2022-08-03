@@ -580,6 +580,7 @@ button {
 }
 
 .our-blog .article {
+  min-height: 28rem;
   max-height: 35rem;
   width: 21rem;
   margin: 0 0.2rem;
