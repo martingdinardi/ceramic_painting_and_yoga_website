@@ -22,13 +22,6 @@ exports.home = async (req, res) => {
       .limit(limitNumber);
 
     const posts = { latestPosts };
-    let country = geo.country;
-    let country_text;
-    if (country === "UY") {
-      country_text = "Conectado desde Uruguay"
-    } else {
-      country_text = "Contectado desde otra parte del mundo"
-    }
 
     res.render("index", {
       title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA ESPACIO MULTIARTE",
