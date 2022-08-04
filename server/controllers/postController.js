@@ -3,20 +3,10 @@ const Post = require("../models/Post");
 const fs = require('fs');
 const path = require('path');
 
-/* OUT OF SITE, TESTING ANOTHER THING */
-
-let geoip = require('geoip-country');
-let os = require("os");
-
 /*GET*/
 /*Home*/
 
 exports.home = async (req, res) => {
-
-  let networkInterfaces = os.networkInterfaces();
-
-  let geo = geoip.lookup(networkInterfaces['Wi-Fi'][0].address);
-
 
   const uploadFolder = path.join(__dirname, "../../public/uploads")
   if (!fs.existsSync(uploadFolder)) {
@@ -39,13 +29,11 @@ exports.home = async (req, res) => {
     } else {
       country_text = "Contectado desde otra parte del mundo"
     }
-    console.log(country_text)
 
     res.render("index", {
       title: "Talleres de Céramica, Pintura y Yoga - DELLA PIETRA ESPACIO MULTIARTE",
       posts,
       errorMessage,
-      country_text
     });
   } catch (error) {
     res.status(500).send({ message: error.message || "An error occured" });
